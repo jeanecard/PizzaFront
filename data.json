@@ -1,0 +1,137 @@
+{
+    "allergens": {
+        "data": [
+            {
+                "code": "1",
+                "label": "piment",
+                "url": "-"
+            },
+            {
+                "code": "2",
+                "label": "poivre",
+                "url": "-"
+            },
+            {
+                "code": "3",
+                "label": "saumon",
+                "url": "-"
+            },
+            {
+                "code": "4",
+                "label": "travail",
+                "url": "-"
+            }
+        ],
+        "pagination": {
+            "total": 1,
+            "per_page": 10,
+            "current_page": 0,
+            "last_page": 0,
+            "next_page_url": "-",
+            "prev_page_url": "-",
+            "from": 0,
+            "to": 0
+        }
+    },
+    "base": {
+        "data": {
+            "sizes": [
+                {
+                    "code": "1",
+                    "label": "petite",
+                    "price": 10,
+                    "url": "string"
+                },
+                {
+                    "code": "2",
+                    "label": "moyenne",
+                    "price": 11,
+                    "url": "string"
+                },
+                {
+                    "code": "3",
+                    "label": "grande",
+                    "price": 15,
+                    "url": "string"
+                }
+            ],
+            "bases": [
+                {
+                    "code": "1",
+                    "label": "tomates",
+                    "price": 5,
+                    "url": "string"
+                },
+                {
+                    "code": "2",
+                    "label": "cremes",
+                    "price": 5,
+                    "url": "string"
+                }
+            ]
+        }
+    },
+    "ingredients": {
+        "data": [
+            {
+                "code": "1",
+                "label": "piment",
+                "price": 2,                
+                "url": "-"
+            },
+            {
+                "code": "2",
+                "label": "poivre",
+                "price": 2,                
+                "url": "-"
+            },
+            {
+                "code": "3",
+                "label": "saumon",
+                "price": 2,                
+                "url": "-"
+            },
+            {
+                "code": "4",
+                "label": "travail",
+                "price": 2,                
+                "url": "-"
+            },            
+            {
+                "code": "5",
+                "label": "oeuf",
+                "price": 2,
+                "url": "string"
+            },
+            {
+                "code": "6",
+                "label": "saumon",
+                "price": 2,
+                "url": "string"
+            },
+            {
+                "code": "7",
+                "label": "oeuf",
+                "price": 2,
+                "url": "string"
+            }
+            ,
+            {
+                "code": "8",
+                "label": "emmental",
+                "price": 2,
+                "url": "string"
+            }            
+        ],
+        "pagination": {
+            "total": 1,
+            "per_page": 10,
+            "current_page": 0,
+            "last_page": 0,
+            "next_page_url": "string",
+            "prev_page_url": "string",
+            "from": 0,
+            "to": 0
+        }
+    }
+}

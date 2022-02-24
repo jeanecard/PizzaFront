@@ -1,0 +1,30 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Taille et Base</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+
+        <form [formGroup]="form">
+            <mat-form-field appearance="fill">
+                <mat-label>Favorite Food</mat-label>
+                <mat-select [formControl]="foodControl" name="food">
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <p>Selected: {{foodControl.value}}</p>
+            <mat-form-field appearance="fill">
+                <mat-label>Favorite Food</mat-label>
+                <mat-select [formControl]="carControl" name="car">
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let car of cars" [value]="car.value">
+                        {{car.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <p>Selected: {{carControl.value}}</p>
+        </form>
+    </mat-card-content>
+</mat-card>
