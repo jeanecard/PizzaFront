@@ -1,6 +1,6 @@
 export interface IngredientI {
-    code = "";
-    label = "";
-    price =  0;
-    url = "";
+    code : string;
+    label : string;
+    price : number;
+    url : string;
 }

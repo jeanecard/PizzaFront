@@ -3,15 +3,14 @@
     <mat-card-header>
       <mat-card-title>Allergenes</mat-card-title>
     </mat-card-header>
-    <mat-card-content>
-        <mat-selection-list #shoes>
-            <mat-list-option *ngFor="let shoe of typesOfShoes">
-              {{shoe}}
+    <mat-card-content *ngIf="collection$ | async as collection">
+        <mat-selection-list #allergens>
+            <mat-list-option *ngFor="let item of collection">
+              ({{item?.code}}) - {{item?.label}}
             </mat-list-option>
           </mat-selection-list>
-          
           <p>
-            Options selected: {{shoes.selectedOptions.selected.length}}
+            Options selected: {{allergens.selectedOptions.selected.length}}
           </p>        
     </mat-card-content>
   </mat-card>

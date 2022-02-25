@@ -3,22 +3,22 @@
         "data": [
             {
                 "code": "1",
-                "label": "Piment",
+                "label": "piment",
                 "url": "-"
             },
             {
                 "code": "2",
-                "label": "Poivre",
+                "label": "poivre",
                 "url": "-"
             },
             {
                 "code": "3",
-                "label": "Saumon",
+                "label": "saumon",
                 "url": "-"
             },
             {
                 "code": "4",
-                "label": "Travail",
+                "label": "travail",
                 "url": "-"
             }
         ],
