@@ -4,8 +4,8 @@
       <mat-card-title>Allergenes</mat-card-title>
     </mat-card-header>
     <mat-card-content *ngIf="collection$ | async as collection">
-        <mat-selection-list #allergens>
-            <mat-list-option *ngFor="let item of collection">
+        <mat-selection-list #allergens (selectionChange)="onSelection(allergens.selectedOptions.selected)" >
+            <mat-list-option *ngFor="let item of collection"  [value]="item">
               ({{item?.code}}) - {{item?.label}}
             </mat-list-option>
           </mat-selection-list>

@@ -1,4 +1,4 @@
-<app-allergens></app-allergens>
+<app-allergens (newAllergensEvent$)="onAllergensSelectionChange($event)" ></app-allergens>
 <app-taille-et-base></app-taille-et-base>
 <app-ingredients></app-ingredients>
-<app-panier></app-panier>
+<app-panier  [panierIn$]="panierIn$" [panierOut$]="panierOut$"  ></app-panier>

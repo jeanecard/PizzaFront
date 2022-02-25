@@ -3,6 +3,9 @@ import { Observable, Subscription } from 'rxjs';
 import { Allergen } from '../core/models/allergen';
 import { AllergenesService } from '../core/services/allergenes.service';
 
+import { Output, EventEmitter } from '@angular/core';
+import { MatListOption } from '@angular/material/list/selection-list';
+
 
 @Component({
   selector: 'app-allergens',
@@ -12,6 +15,9 @@ import { AllergenesService } from '../core/services/allergenes.service';
 export class AllergensComponent implements OnInit, OnDestroy {
 
   public collection$: Observable<Allergen[]>;
+  @Output() newAllergensEvent$ = new EventEmitter<Allergen[]>();
+
+
   private _sub: Subscription;
 
   constructor(private _allergenService : AllergenesService) { 
@@ -34,6 +40,10 @@ export class AllergensComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-
   }
+
+  public onSelection(selectedOptions : MatListOption[]) : void{
+    const allergensSelected = selectedOptions.map(s => (new Allergen(s.value)));
+    this.newAllergensEvent$.emit(allergensSelected);
+ }
 }

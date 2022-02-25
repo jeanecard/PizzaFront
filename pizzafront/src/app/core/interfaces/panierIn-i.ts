@@ -1,8 +1,8 @@
-import { CodeI } from "./code-i";
+import { AllergenI } from "./allergen-i";
 import { PizzaI } from "./pizza-i";
 
 export interface PanierInI {
-    allergens : Array<CodeI>;
+    allergens : Array<AllergenI>;
     pizza: PizzaI;
 }
 

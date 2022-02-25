@@ -4,10 +4,14 @@
       <mat-card-title>Panier</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-        Prix : 11
-        <br>
-        Conforme à : 
-        <br>
+Allergens 
+<ul>
+  <li *ngFor="let allergen of panierIn$?.allergens">{{ allergen.code }} - {{ allergen.label }}</li>
+</ul>
+
+<br>
+Prix total : {{panierOut$?.data?.amount}}
+
     </mat-card-content>
   </mat-card>
 
