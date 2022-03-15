@@ -12,7 +12,7 @@ export class PanierComponent implements OnInit {
 
 
   @Input() panierIn$ : PanierIn; 
-  @Input() panierOut$ : PanierOut; 
+  panierOut$ : PanierOut; 
 
   
   constructor() { 

@@ -11,12 +11,11 @@ import { PanierOut } from '../core/models/panierOut';
 export class MainComponent implements OnInit {
 
   public panierIn$: PanierIn;
-  public panierOut$: PanierOut;
+  
 
   constructor() {
     this.panierIn$ = new PanierIn();
-    this.panierOut$ = new PanierOut();
-  }
+    }
 
   ngOnInit(): void {
   }
@@ -26,18 +25,6 @@ export class MainComponent implements OnInit {
     data?.forEach(iter => {
       this.panierIn$.allergens.push(iter);
     });
-    this.updatePanierOut();
-  }
-
-
-  updatePanierOut(): void {
-    //Ici il reste à mettre à jour le panier out en appellant le service 
-
-    if (this.panierOut$?.data) {
-      //stub :
-      this.panierOut$.data.amount = Math.random()*50;
-    }
-
   }
 }
 
